@@ -20,7 +20,6 @@
 Интерфейс:
 
 - дерево [PrimeNg](https://www.primefaces.org/primeng/#/tree)
-- кнопка "Сообщить"
 
 Задачи:
 
