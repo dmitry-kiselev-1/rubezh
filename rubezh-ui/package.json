@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "npm install": "npm install",
     "ng": "ng",
     "ng serve": "ng serve",
     "ng build": "ng build",
