@@ -16,15 +16,20 @@ import {
   ButtonModule,
   DialogModule,
   TreeModule,
+  Tree,
   TreeNode,
   SelectItem
 } from 'primeng/primeng';
 
-import { TreeService } from './services/tree.service';
+import { TreeServiceMock } from './services/tree.service-mock';
+import { ReactiveFormComponent } from './components/reactive-form.component';
+import { TreeCompareComponent } from './components/tree-compare.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReactiveFormComponent,
+    TreeCompareComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +46,7 @@ import { TreeService } from './services/tree.service';
     DialogModule,
     TreeModule
   ],
-  providers: [TreeService],
+  providers: [TreeServiceMock],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

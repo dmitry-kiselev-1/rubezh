@@ -1,35 +1,52 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 
-import { TreeModule, TreeNode } from 'primeng/primeng';
-import { TreeService } from './services/tree.service';
+import {Tree, TreeModule, TreeNode} from 'primeng/primeng';
+import { TreeServiceMock } from './services/tree.service-mock';
 
 @Component({
   selector: 'app-root',
   template: `
 
-    <p-tree [value]="files" selectionMode="single" [(selection)]="selectedFile"></p-tree>
+    <!--<p-tree [value]="files" selectionMode="single" [(selection)]="selectedFile"></p-tree>-->
 
+    <div class="ui-grid">
+      <div class="ui-grid-col-3">
+        <p-tree [value]="tree1" selectionMode="single" [(selection)]="selectedTree1"></p-tree>
+      </div>
+      <div class="ui-grid-col-3">
+        <p-tree [value]="tree2" selectionMode="single" [(selection)]="selectedTree2"></p-tree>
+      </div>
+    </div>
+
+<!--
     <button pButton type="button" label="Click"></button>
     <button pButton type="button" label="Danger"  class="ui-button-danger"></button>
-    
-    <!--The content below is only a placeholder and can be replaced.-->
-    <div style="text-align:center">
-      <h1>
-        Welcome to {{title}}!
-      </h1>
-      </div>
+-->
   `,
   styles: []
 })
 export class AppComponent implements OnInit {
+
   title = 'app';
 
   files: TreeNode[];
   selectedFile: TreeNode;
 
-  constructor(private treeService: TreeService) {}
+  tree1: TreeNode[];
+  selectedTree1: TreeNode;
+
+  tree2: TreeNode[];
+  selectedTree2: TreeNode;
+
+  constructor(private treeService: TreeServiceMock) {}
 
   ngOnInit() {
-    this.treeService.getFiles().then(files => this.files = files);
+    this.treeService.getTree1().then(tree => this.tree1 = tree);
+    this.treeService.getTree2().then(tree => this.tree2 = tree);
+
+/*
+
+*/
+
   }
 }

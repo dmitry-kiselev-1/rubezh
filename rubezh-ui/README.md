@@ -1,3 +1,42 @@
+# Задание от 10.11
+
+1. Создать Angular 4 проект
+1. Реализовать описанный функционал
+1. К ответному письму приложить проект в виде ссылки на репозиторий или облако
+
+## Реактив
+
+Интерфейс:
+
+- реактивный input ввода email с встроенной в Angular валидацией
+
+Задачи:
+
+1. Подсвечивать границу input в зависимости от результатов валидации
+1. При вводе email печатать содержимое input в консоль с задержкой 300мс
+
+## Структуры данных
+
+Интерфейс:
+
+- дерево [PrimeNg](https://www.primefaces.org/primeng/#/tree)
+
+Задачи:
+
+1. Создать angular-сервис получения данных, описанных во [вложениях](attachment) 1 и 2
+1. Подключить дерево PrimeNg и отобразить данные дерева 1
+1. Лейблы листьев дерева, значения которых отличаются от соответствующих у дерева 2, сделать красным текстом
+1. Сформировать массив из отличных листьев согласно указанному ниже формату, вывести его в консоль
+
+Формат массива:
+
+```javascript
+let exampleArr = [
+	{ tree1: 'labelFromTree1', tree2: 'labelFromTree2'},
+	{ ... }
+];
+```
+
 # RubezhUi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
@@ -25,3 +64,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
