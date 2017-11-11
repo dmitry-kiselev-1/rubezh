@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ui App', () => {
+describe('rubezh-ui App', () => {
   let page: AppPage;
 
   beforeEach(() => {
