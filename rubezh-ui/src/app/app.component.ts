@@ -59,18 +59,18 @@ export class AppComponent implements OnInit {
     ]).then(all => {
 
         _.forEach(this.tree1, (node) => {
-          this.applyStileRecursive(node);
+          this.applyStyleRecursive(node);
         });
 
         _.forEach(this.tree2, (node) => {
-          this.applyStileRecursive(node);
+          this.applyStyleRecursive(node);
         });
 
       }
     );
   }
 
-  applyStileRecursive(node: TreeNode) {
+  applyStyleRecursive(node: TreeNode) {
 
     node.expanded = true;
     node.styleClass = "TreeNodeStyleClassNormal";
@@ -79,7 +79,7 @@ export class AppComponent implements OnInit {
     if (node.children) {
       _.forEach(node.children, (children) => {
 
-        this.applyStileRecursive(children);
+        this.applyStyleRecursive(children);
 
       })
     }
