@@ -10,7 +10,7 @@ export class TreeServiceMock {
 
   // Извлечение структуры 1:
   getTree1() {
-    return this.http.get('../../assets/mock/tree.service-mock1.json')
+    return this.http.get('assets/mock/tree.service-mock1.json')
       .toPromise()
       .then(
         result => {
@@ -20,7 +20,7 @@ export class TreeServiceMock {
 
   // Извлечение структуры 2:
   getTree2() {
-    return this.http.get('../../assets/mock/tree.service-mock2.json')
+    return this.http.get('assets/mock/tree.service-mock2.json')
       .toPromise()
       .then(
         result => {
