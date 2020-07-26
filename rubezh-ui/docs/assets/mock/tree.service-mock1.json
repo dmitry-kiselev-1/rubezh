@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "label": "System",
+      "expandedIcon": "fa-folder-open",
+      "collapsedIcon": "fa-folder",
+      "children": [
+        {
+          "label": "Core",
+          "data": "Documents Folder",
+          "expandedIcon": "fa-folder-open",
+          "collapsedIcon": "fa-folder",
+          "children": [
+            {
+              "label": "Камеры",
+              "data": "Work Folder",
+              "expandedIcon": "fa-folder-open",
+              "collapsedIcon": "fa-folder",
+              "children": [
+                {
+                  "label": "Офис 1",
+                  "expandedIcon": "fa-folder-open",
+                  "collapsedIcon": "fa-folder",
+                  "children": [
+                    {
+                      "label": "Общий вид",
+                      "expanded": true
+                    },
+                    {
+                      "label": "Оборудование",
+                      "expandedIcon": "fa-folder-open",
+                      "collapsedIcon": "fa-folder",
+                      "children": [
+                        {
+                          "label": "Cam 1 (Сервер)",
+                          "expanded": true
+                        },
+                        {
+                          "label": "Cam 2",
+                          "expanded": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "Этаж",
+                  "expanded": true
+                },
+                {
+                  "label": "Лестница",
+                  "expanded": true
+                },
+                {
+                  "label": "Офис 2",
+                  "expandedIcon": "fa-folder-open",
+                  "collapsedIcon": "fa-folder",
+                  "children": [
+                    {
+                      "label": "Общий вид",
+                      "expanded": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Core 2",
+          "data": "Documents Folder",
+          "expandedIcon": "fa-folder-open",
+          "collapsedIcon": "fa-folder",
+          "children": [
+            {
+              "label": "Датчики",
+              "data": "Work Folder",
+              "expandedIcon": "fa-folder-open",
+              "collapsedIcon": "fa-folder",
+              "children": [
+                {
+                  "label": "Офис 1",
+                  "expandedIcon": "fa-folder-open",
+                  "collapsedIcon": "fa-folder",
+                  "children": [
+                    {
+                      "label": "Датчик дыма 1",
+                      "expanded": true
+                    },
+                    {
+                      "label": "Датчик дыма 2",
+                      "expanded": true
+                    }
+                  ]
+                },
+                {
+                  "label": "Офис 2",
+                  "expandedIcon": "fa-folder-open",
+                  "collapsedIcon": "fa-folder",
+                  "children": [
+                    {
+                      "label": "Датчик дыма 1",
+                      "expanded": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
